@@ -2,14 +2,14 @@
   "name": "grunt-sf-jedi",
   "description": "A suite of grunt task for interacting with Salesforce",
   "version": "0.0.1",
-  "homepage": "https://github.com/jkentjnr/grunt-force-developer",
+  "homepage": "https://github.com/lessonteacher/grunt-sf-jedi",
   "author": {
-    "name": "Hugo Armstrong",
+    "name": "lessonteacher",
     "email": "hugo.armstrong@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jkentjnr/grunt-force-developer.git"
+    "url": "git://github.com/lessonteacher/grunt-sf-jedi.git"
   },
   "bugs": {
     "url": "https://github.com/lessonteacher/grunt-sf-jedi/issues"
@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/lessonteacher/grunt-sf-jedi/blob/master/LICENSE-MIT"
+      "url": "https://github.com/lessonteacher/grunt-sf-jedi/blob/master/LICENSE"
     }
   ],
   "engines": {
@@ -26,13 +26,13 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies":{
+    "sf-jedi": "https://github.com/lessonteacher/sf-jedi.git"
+  },
   "devDependencies": {
-    "any-promise": "^1.1.0",
-    "checksum": "^0.1.1",
-    "es6-promise": "^3.1.2",
-    "fs-promise": "^0.5.0",
     "grunt": "0.4.5",
-    "grunt-cli": "0.1.13"
+    "grunt-cli": "0.1.13",
+    "sf-jedi": "https://github.com/lessonteacher/sf-jedi.git"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
@@ -42,6 +42,7 @@
     "salesforce",
     "force.com",
     "jsforce",
+    "sf-jedi",
     "developer tool",
     "grunt"
   ],
