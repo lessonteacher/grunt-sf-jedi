@@ -31,8 +31,8 @@ module.exports = function(grunt) {
         }
       },
 
-      // Setup pull, push, clean tasks (no special options yet)
-      pull: {}, push: {}, clean:{}
+      // Setup pull, push, reset tasks (no special options yet)
+      pull: {}, push: {}, reset:{}
     }
   });
 
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
   // grunt force:init
   // grunt force:pull
   // grunt force:push
-  // grunt force:clean <--- Obliterates everything right now so watch out
+  // grunt force:reset <--- Obliterates everything right now so watch out
 
   grunt.loadNpmTasks('grunt-sf-jedi');
 

@@ -1,7 +1,7 @@
 {
   "name": "grunt-sf-jedi",
   "description": "A suite of grunt task for interacting with Salesforce",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/lessonteacher/grunt-sf-jedi",
   "author": {
     "name": "lessonteacher",
@@ -21,18 +21,14 @@
     }
   ],
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 4.4.0"
   },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "dependencies":{
-    "sf-jedi": "https://github.com/lessonteacher/sf-jedi.git"
+  "dependencies": {
+    "grunt": "0.4.5",
+    "sf-jedi":"^0.0.1"
   },
   "devDependencies": {
-    "grunt": "0.4.5",
-    "grunt-cli": "0.1.13",
-    "sf-jedi": "https://github.com/lessonteacher/sf-jedi.git"
+    "grunt": "0.4.5"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
@@ -45,9 +41,5 @@
     "sf-jedi",
     "developer tool",
     "grunt"
-  ],
-  "dependencies": {
-    "grunt": "0.4.5",
-    "grunt-cli": "0.1.13"
-  }
+  ]
 }
