@@ -18,7 +18,11 @@ module.exports = function(grunt) {
         // token: process.env.SF_TOKEN,
         // host: process.env.SF_HOST,
 
-        logLevel: 'debug' // Set the debug level
+        // Set the autoPull setting, default is false
+        // autoPull: true,
+
+        // Sets the output to be more verbose, uses winston logging levels
+        logLevel: 'debug' // Default is 'info'
       },
 
       // Setup for the force init task
@@ -26,7 +30,7 @@ module.exports = function(grunt) {
         options: {
           // Setup project
           project: {
-            src: './src' // This is the default for the code
+            src: './src' // Set a custom source folder
           }
         }
       },

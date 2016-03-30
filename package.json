@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "grunt": "0.4.5",
-    "sf-jedi":"^0.0.1"
+    "sf-jedi":"^0.1.0"
   },
   "devDependencies": {
     "grunt": "0.4.5"

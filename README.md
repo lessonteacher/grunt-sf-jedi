@@ -88,10 +88,6 @@ standard `package.xml` in.
 It is possible to specify an `options` object which provides a `project.src`
 setting as shown in the example. This will change `.force/src -> ./your/folder`
 
-_Note that currently after the `init`, a `pull` occurs automatically.
-This feature will soon change and become
-configurable with the default not doing this_
-
 ### force:pull
 
 The `force:pull` task will pull all the metadata down based off the `package.xml`.
