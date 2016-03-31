@@ -1,13 +1,13 @@
 'use strict';
 
-// This is an example file of some Gruntfile.js
+require('dotenv').config();
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
 
     // Set the default config stuff
     force: {
-      // Setup the base options
       options: {
         //=============================================================
         // All of these are set in my .env in the project root folder and
@@ -18,37 +18,61 @@ module.exports = function(grunt) {
         // token: process.env.SF_TOKEN,
         // host: process.env.SF_HOST,
 
-        // Set the autoPull setting, default is false
-        // autoPull: true,
-
-        // Sets the output to be more verbose, uses winston logging levels
-        logLevel: 'debug' // Default is 'info'
+        pollTimeout:60000, // Time in ms for jsforce retrieve / deploy
+        pollInterval:1000, // Time between polls in ms for jsforce
+        logging: {
+          level: 'debug' // Set log output level
+        }
       },
 
-      // Setup for the force init task
       init: {
         options: {
-          // Setup project
           project: {
-            src: './src' // Set a custom source folder
+            src: './src', // Where the files will go (do not leave a trailing /)
+            pullOnInit: false, // Set this true if you want to pull after initialising
+            createMetaXml: true, // True if you want missing -meta.xml to be created
+
+            // You can set the whole package.xml, this is the default(which is set for you)
+            package: {
+              types: [
+                { members: '*', name: 'ApexClass' },
+                { members: '*', name: 'ApexComponent' },
+                { members: '*', name: 'ApexPage' },
+                { members: '*', name: 'ApexTrigger' },
+                { members: '*', name: 'StaticResource' }
+              ],
+              version: version || '34.0' // if you change THIS version it will be used
+            }
           }
         }
       },
 
-      // Setup pull, push, reset tasks (no special options yet)
-      pull: {}, push: {}, reset:{}
+      pull: {
+        options: {
+          // You can set these per Pull, Push or globaly
+          pollTimeout: 120000, // Same as the global
+          pollInterval: 1000   // Same as the global
+        }
+      },
+
+      push: {
+        options: {
+          pollTimeout: 240000, // Yes you can set these again
+
+          // A random selection from salesforce docs
+          allowMissingFiles: true,
+          runTests:['some_test','some_other_test']
+        }
+      },
+
+      reset: {
+        options: {
+          deleteSrcOnReset: false // Set to false if you dont want the src folder to be reset
+        }
+      }
     }
   });
 
-  // Usage from cli
-  // grunt force:init
-  // grunt force:pull
-  // grunt force:push
-  // grunt force:reset <--- Obliterates everything right now so watch out
-
-  grunt.loadNpmTasks('grunt-sf-jedi');
-
-  // Default tasks? initialises any non-existing .force folder and pulls metadata
-  // from the init.options.project.src package.xml if existing, else copies a default into there
+  grunt.loadTasks('grunt-sf-jedi');
   grunt.registerTask('default',['force:init']);
 };
