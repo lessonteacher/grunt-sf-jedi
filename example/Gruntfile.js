@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                 { members: '*', name: 'ApexTrigger' },
                 { members: '*', name: 'StaticResource' }
               ],
-              version: version || '34.0' // if you change THIS version it will be used
+              version: '34.0' // if you change THIS version it will be used
             }
           }
         }
