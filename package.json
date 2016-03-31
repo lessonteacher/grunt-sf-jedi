@@ -1,7 +1,7 @@
 {
   "name": "grunt-sf-jedi",
   "description": "A suite of grunt task for interacting with Salesforce",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/lessonteacher/grunt-sf-jedi",
   "author": {
     "name": "lessonteacher",
