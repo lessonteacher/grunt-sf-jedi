@@ -1,14 +1,14 @@
 # Grunt SF Jedi
 
-This is a set of [`grunt`][grunt] tasks for the [`sf-jedi`][sf-jedi] package.
+>A set of [`grunt`][grunt] tasks for the [`sf-jedi`][sf-jedi] package.
 if you are not familiar with grunt then you can take a look
 through the provided link
 
-The tasks basically expose functionality from the
-Salesforce metadata api via [JSforce][jsforce].
-See the linked [repo][sf-jedi] for more details
+_The tasks allow you to `deploy` and `retrieve` from Salesforce. See the linked [sf-jedi repo][sf-jedi] for more details..._
 
 ## Install
+
+[![NPM](https://nodei.co/npm/grunt-sf-jedi.png?downloads=true)](https://nodei.co/npm/grunt-sf-jedi/)
 
 If you dont have `grunt` install the grunt-cli via
 
