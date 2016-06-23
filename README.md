@@ -8,6 +8,8 @@ The tasks basically expose functionality from the
 Salesforce metadata api via [JSforce][jsforce].
 See the linked [repo][sf-jedi] for more details
 
+_**Note:** Currently this is not maintained as I am not working on any Salesforce system. Also there is a really nice project called [dmc][dmc] which I found out about later after implementing this and it is aiming to do a lot of what I wanted so you should check it out_
+
 ## Install
 
 If you dont have `grunt` install the grunt-cli via

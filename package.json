@@ -2,22 +2,22 @@
   "name": "grunt-sf-jedi",
   "description": "A suite of grunt task for interacting with Salesforce",
   "version": "0.1.2",
-  "homepage": "https://github.com/lessonteacher/grunt-sf-jedi",
+  "homepage": "https://github.com/lteacher/grunt-sf-jedi",
   "author": {
-    "name": "lessonteacher",
+    "name": "lteacher",
     "email": "hugo.armstrong@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lessonteacher/grunt-sf-jedi.git"
+    "url": "git://github.com/lteacher/grunt-sf-jedi.git"
   },
   "bugs": {
-    "url": "https://github.com/lessonteacher/grunt-sf-jedi/issues"
+    "url": "https://github.com/lteacher/grunt-sf-jedi/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/lessonteacher/grunt-sf-jedi/blob/master/LICENSE"
+      "url": "https://github.com/lteacher/grunt-sf-jedi/blob/master/LICENSE"
     }
   ],
   "engines": {
