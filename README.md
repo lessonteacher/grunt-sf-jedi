@@ -192,3 +192,4 @@ However, key features coming to list here are:
 [sf-jedi]:https://github.com/lessonteacher/sf-jedi
 [gfd]:https://github.com/jkentjnr/grunt-force-developer
 [sf-deploy]:https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_deploy.htm#deploy_options
+[dmc]:https://github.com/kevinohara80/dmc
